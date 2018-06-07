@@ -1,0 +1,99 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da Veha</title>
+		<script src="jquery-2.2.1.js"></script>
+		<script src="jogo.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		
+	</head>
+
+	<body>
+		<div id="inserir-nomes">
+			<div>
+				<table>
+					<tr>
+						<td><img class="img-jogador1" src="imagens/jogador1.png"></td>
+					</tr>
+					<tr>
+						<td><input id="nome-jogador1" type="text" name="" placeholder="Jogador1"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<img id="iniciar-jogo" src="imagens/iniciar.png">
+			</div>
+
+			<div>
+				<table>
+					<tr>
+						<td><img class="img-jogador2" src="imagens/jogador2.png"></td>
+					</tr>
+					<tr>
+						<td><input id="nome-jogador2" type="text" name="" placeholder="jogador2"></td>
+					</tr>
+				</table>
+				
+				
+			</div>
+		</div>
+
+		<div id="tabuleiro">
+
+			<div style="display: inline-block;">
+				<img clas="img-jogador1" src="imagens/jogador1.png">
+				<span id="apelido-jogador1"></span>
+			</div>	
+				
+			
+
+			<table>
+				<tr>
+					<td>
+						<div id="a-1" class="jogada borda-direita borda-inferior"></div>
+					</td>
+					<td>
+						<div id="a-2" class="jogada borda-direita borda-inferior"></div>
+					</td>
+					<td>
+						<div id="a-3" class="jogada borda-inferior"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<div id="b-1" class="jogada borda-direita borda-inferior"></div>
+					</td>
+					<td>
+						<div id="b-2" class="jogada borda-direita borda-inferior"></div>
+					</td>
+					<td>
+						<div id="b-3" class="jogada borda-inferior"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<div id="c-1" class="jogada borda-direita"></div>
+					</td>
+					<td>
+						<div id="c-2" class="jogada borda-direita"></div>
+					</td>
+					<td>
+						<div id="c-3" class="jogada borda-ultimo-tabuleiro"></div>
+					</td>
+				</tr>
+			</table>
+
+			<div style="display: inline-block;">
+				<img clas="img-jogador2" src="imagens/jogador2.png">
+				<span id="apelido-jogador2"></span>
+			</div>
+
+		</div>
+	</body>
+</html>
